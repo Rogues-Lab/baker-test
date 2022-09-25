@@ -3,8 +3,10 @@ import "@nomicfoundation/hardhat-toolbox";
 import "hardhat-metabaker";
 import { nftStorageKey } from "./config";
 
+import "./tasks";
+
 const config: HardhatUserConfig = {
-  defaultNetwork: "hardhat",
+  defaultNetwork: "localhost",
   solidity: "0.8.17",
   metabaker: {
     nftStorageKey,
