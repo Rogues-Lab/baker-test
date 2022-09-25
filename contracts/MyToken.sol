@@ -13,9 +13,12 @@ contract MyToken is ERC721, Ownable {
     Counters.Counter private _tokenIdCounter;
     string public baseUri;
 
-    constructor() ERC721("MyToken", "MTK") {}
+    constructor() ERC721("MyToken", "MTK") {
+        _tokenIdCounter.increment(); // start token index at 1
+    }
 
     function safeMint(address to) public {
+        require(_tokenIdCounter.current() <= 10, "Collection is minted out");
         uint256 tokenId = _tokenIdCounter.current();
         _tokenIdCounter.increment();
         _safeMint(to, tokenId);
