@@ -4,7 +4,7 @@
     "@nomicfoundation/hardhat-toolbox": "^2.0.0",
     "hardhat": "^2.11.2",
     "dotenv": "^8.2.0",
-    "hardhat-metabaker": "file:../hardhat-metabaker/hardhat-metabaker-v0.0.1.tgz"
+    "hardhat-metabaker": "file:../hardhat-metabaker/hardhat-metabaker-0.0.1.tgz"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.8.0-rc.1"
